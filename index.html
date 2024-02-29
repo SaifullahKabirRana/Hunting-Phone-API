@@ -13,10 +13,32 @@
 
 <body>
     <header>
-        <h2>Hunting Phone</h2>
+        <!-- <h2 class="text-6xl">Hunting Phone</h2> -->
 
     </header>
-    <main>
+    <main class="container mx-auto mt-12">
+
+        <!-- search -->
+        <section>
+            <div class="text-center">
+                <h3 class="text-[#100F0F] text-3xl font-semibold mb-7">Search your phone</h3>
+                <input id="search-field" type="text" placeholder="Search your phone"
+                    class="input input-ghost w-full max-w-xs md:max-w-md lg:max-w-xl bg-[#100F0F0D] mb-12 p-6" />
+                <button onclick="handleSearch()" class="btn btn-accent font-semibold px-8 text-xl ">Search</button>
+
+            </div>
+        </section>
+
+        <!-- search result -->
+        <section>
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            </div>
+            <!-- show all button -->
+            <div id="show-all-container" class="text-center hidden">
+                <button  class="btn btn-accent px-8 text-xl font-semibold mt-10">Show All</button>
+            </div>
+
+        </section>
 
     </main>
     <footer>
